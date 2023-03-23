@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    background-image: url(res/mountain-bg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+li {
+    list-style-type: none; 
+}
+
+ a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1 rem;  
+}
+
+a:hover {
+    color: orange;
+}
+
+.navbar {
+    display: flex;
+    
+}
