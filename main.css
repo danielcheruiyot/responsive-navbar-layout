@@ -85,6 +85,49 @@ header {
     background-color: transparent;
     color: orange;
     scale: 1.1;
+
+}
+
+.action-button:active {
+    scale:0.8;
+}
+
+/*DROPDOWN MENU*/
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    width: 300px;
+    left: 20%;
+    top: 60px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: none;
+    height: 0;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu.open {
+    height: 240px;
+}
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu .action-button {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.toggle-btn-i {
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
 }
 
 /*RESPONSIVE QUERY*/
@@ -96,5 +139,18 @@ header {
 
     .navbar .toggle-btn {
         display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 650px) {
+    .dropdown-menu {
+        left: 2rem;
+        /* width: 100%; */
+        right: 2rem;
+        width: unset;
     }
 }
