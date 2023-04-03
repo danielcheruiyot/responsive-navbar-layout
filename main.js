@@ -1,6 +1,6 @@
        window.onload = function() {
-            const toggleBtn = document.querySelector('.togge-btn');
-            const toggleBtnIcon = document.querySelector('.togge-btn i');
+            const toggleBtn = document.querySelector('.toggle-btn');
+            const toggleBtnIcon = document.querySelector('.toggle-btn i');
             const dropDownMenu = document.querySelector('.dropdown-menu');
 
         
